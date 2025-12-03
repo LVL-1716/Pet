@@ -1,0 +1,27 @@
+{
+  "name": "pet-style",
+  "version": "1.0.0",
+  "description": "Pet&Style - Loja de produtos para pets com otimização de performance web",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000",
+    "optimize": "node optimize-images.js",
+    "build": "npm run optimize"
+  },
+  "keywords": [
+    "pet",
+    "e-commerce",
+    "performance",
+    "webp",
+    "optimization"
+  ],
+  "author": "Pet&Style",
+  "license": "MIT",
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LVL-1716/Pet"
+  }
+}

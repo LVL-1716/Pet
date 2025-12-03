@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pet&Style - Produtos para Pets com Estilo</title>
-  <!-- Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Tailwind CSS CDN - otimizado -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -34,7 +36,7 @@
         <a href="#produtos" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-pink-700 transition">Ver Produtos</a>
       </div>
       <div class="flex-1 flex justify-center">
-        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Pet estiloso" class="rounded-xl shadow-lg w-72 h-72 object-cover"/>
+        <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Pet estiloso" class="rounded-xl shadow-lg w-72 h-72 object-cover" loading="lazy"/>
       </div>
     </div>
   </section>
@@ -46,7 +48,10 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Produto 1 -->
         <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
-          <img src="images/cce2ytcce2ytcce2.png" alt="Caminha Luxo" class="w-32 h-32 object-cover rounded mb-4"/>
+          <picture>
+            <source srcset="images/cce2ytcce2ytcce2.webp" type="image/webp"/>
+            <img src="images/cce2ytcce2ytcce2.png" alt="Caminha Luxo" class="w-32 h-32 object-cover rounded mb-4" loading="lazy"/>
+          </picture>
           <h3 class="font-semibold text-lg mb-2">Caminha Luxo</h3>
           <p class="text-gray-600 mb-2 text-center">Conforto e estilo para o descanso do seu pet.</p>
           <span class="font-bold text-pink-600 mb-2">R$ 199,90</span>
@@ -54,7 +59,10 @@
         </div>
         <!-- Produto 2 -->
         <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
-          <img src="images/coleira_e1h9o3e1h9o3e1h9.png" alt="Coleira Fashion" class="w-32 h-32 object-cover rounded mb-4"/>
+          <picture>
+            <source srcset="images/coleira_e1h9o3e1h9o3e1h9.webp" type="image/webp"/>
+            <img src="images/coleira_e1h9o3e1h9o3e1h9.png" alt="Coleira Fashion" class="w-32 h-32 object-cover rounded mb-4" loading="lazy"/>
+          </picture>
           <h3 class="font-semibold text-lg mb-2">Coleira Fashion</h3>
           <p class="text-gray-600 mb-2 text-center">Design moderno e seguro para passeios estilosos.</p>
           <span class="font-bold text-pink-600 mb-2">R$ 59,90</span>
@@ -62,7 +70,10 @@
         </div>
         <!-- Produto 3 -->
         <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
-          <img src="images/Image_52pa5j52pa5j52pa.png" alt="Brinquedo Mordedor" class="w-32 h-32 object-cover rounded mb-4"/>
+          <picture>
+            <source srcset="images/Image_52pa5j52pa5j52pa.webp" type="image/webp"/>
+            <img src="images/Image_52pa5j52pa5j52pa.png" alt="Brinquedo Mordedor" class="w-32 h-32 object-cover rounded mb-4" loading="lazy"/>
+          </picture>
           <h3 class="font-semibold text-lg mb-2">Brinquedo Mordedor</h3>
           <p class="text-gray-600 mb-2 text-center">Diversão garantida para seu pet gastar energia.</p>
           <span class="font-bold text-pink-600 mb-2">R$ 29,90</span>
@@ -70,7 +81,10 @@
         </div>
         <!-- Produto 4 -->
         <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center">
-          <img src="images/band_ny6ckxny6ckxny6c.png" alt="Bandana Colorida" class="w-32 h-32 object-cover rounded mb-4"/>
+          <picture>
+            <source srcset="images/band_ny6ckxny6ckxny6c.webp" type="image/webp"/>
+            <img src="images/band_ny6ckxny6ckxny6c.png" alt="Bandana Colorida" class="w-32 h-32 object-cover rounded mb-4" loading="lazy"/>
+          </picture>
           <h3 class="font-semibold text-lg mb-2">Bandana Colorida</h3>
           <p class="text-gray-600 mb-2 text-center">Deixe seu pet ainda mais charmoso com nossas bandanas.</p>
           <span class="font-bold text-pink-600 mb-2">R$ 19,90</span>
